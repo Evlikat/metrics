@@ -1,5 +1,8 @@
 package net.evlikat.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Comparator;
 import java.util.DoubleSummaryStatistics;
 import java.util.PriorityQueue;
@@ -11,6 +14,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.function.Supplier;
 
 public class StatService {
+
+    private static final Logger LOG = LoggerFactory.getLogger(StatService.class);
 
     private static final int MINUTE = 60 * 1000;
 
